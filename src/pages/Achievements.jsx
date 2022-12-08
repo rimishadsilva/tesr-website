@@ -1,7 +1,7 @@
 import AchievementElement from "../components/AchievementElement";
 
-const Events = () => {    
-    const events = [
+const Achievements = () => {    
+    const achievements = [
     {
       title: 'Season 2019 (ATVC-Gujarat)',
       image: 'https://lh6.googleusercontent.com/r2URLLNv0L60mohEhxDCOndYl0y6X3u6WNhuyV3uIMBEdg70XlIL7bMi1uyg7jKgr9oQ_zSKFVMBMsE3h3sojMLWKebMNBYdQUe3kM6xpdPQLvUjzelDsD72ctR5qQEizJs4QDW4hZhoQlu6sWFR37nssJtfQyfXOGYgiba3nnxwH0phXR94kNemKYYkhoGB=w1280',
@@ -51,7 +51,7 @@ const Events = () => {
                        style={{ left: '50%', border: '2px solid #FFC100', 'border-radius': '1%' }}>
                       </div>
                       {
-                        events.map(event => <AchievementElement {...event} />)
+                        achievements.map(event => <AchievementElement {...event} />)
                       }
                   </div>
                 </div>
@@ -60,4 +60,4 @@ const Events = () => {
         </section>
 }
 
-export default Events;
+export default Achievements;
