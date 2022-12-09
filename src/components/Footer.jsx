@@ -5,15 +5,15 @@ const Footer = () => {
 		<div className='bg-secondaryBackground py-20'>
 			<div className='container mx-auto px-10'>
 				<div className='flex flex-col lg:flex-row justify-between gap-10 pb-20'>
-					<div className='w-1/3 sm:w-1/2'>
-						<div className='md:text-4xl font-bold text-3xl pb-4'>Address</div>
+					<div className='sm:w-3/6'>
+						<div className='md:text-4xl text-3xl pb-4'>Address</div>
 						<div className='text-gray-200 text-xl'>
 							St Joseph Engineering College, Vamanjoor, Mangalore, Karnataka,
 							India - 575028
 						</div>
 					</div>
-					<div className='w-1/3 sm:w-1/2'>
-						<div className='md:text-4xl font-bold text-3xl pb-4'>Contact</div>
+					<div className='sm:w-2/6'>
+						<div className='md:text-4xl text-3xl pb-4'>Contact</div>
 						<div className='text-gray-200 text-xl'>
 							<a
 								href='mailto:teamesjecracing@gmail.com'
@@ -31,8 +31,8 @@ const Footer = () => {
 							</div>
 						</div>
 					</div>
-					<div className='w-1/3 sm:w-1/2'>
-						<div className='md:text-4xl font-bold text-3xl pb-4'>Follow Us</div>
+					<div className='sm:w-1/3'>
+						<div className='md:text-4xl text-3xl pb-4'>Follow Us</div>
 						<div className='text-gray-200 text-xl flex flex-col'>
 							<a
 								href='https://twitter.com/TEAMeSJECRACING?s=08'
@@ -70,14 +70,23 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className='flex items-center justify-end md:text-2xl font-bold'>
-					made with{' '}
+				<div className='flex items-center justify-center md:text-2xl'>
+					Made with{' '}
 					<img
 						src={FooterHeartImage}
 						alt='Footer Heart'
 						className='inline px-4 w-16'
 					/>{' '}
-					by GDSC SJEC
+					by{' '}
+					<a
+						href='https://gdscsjec.in'
+						target='_blank'
+						rel='noreferrer'
+						className='hover:text-greenColor hover:text-gray-200 px-2'
+					>
+						GDSC SJEC
+					</a>{' '}
+					| ©️ Team eSJEC Racing
 				</div>
 			</div>
 		</div>

@@ -14,7 +14,7 @@ const AchievementElement = ({ date, title, image, description, sides }) => {
 				<h4 class='mb-3 font-bold text-lg md:text-3xl'>{title}</h4>
 				<img src={image} alt={title} />
 				<p class='leading-snug text-opacity-100 text-xl pt-4'>
-					<ul class='list-disc list-inside'>{description}</ul>
+					<ul class='md:list-disc md:list-inside'>{description}</ul>
 				</p>
 			</div>
 		</div>
