@@ -5,7 +5,7 @@ import Section4 from '../components/home/Section4';
 
 const Home = () => {
 	return (
-		<div className='container mx-auto'>
+		<div className='container mx-auto px-10'>
 			<Section1 />
 			<Section2 />
 			<Section3 />
