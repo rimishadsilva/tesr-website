@@ -4,10 +4,10 @@ const Section4 = () => {
 	return (
 		<div className='flex flex-col md:flex-row justify-between items-center py-10 gap-20 mb-20'>
 			<div className='md:w-3/5 sm:w-1/2'>
-				<div className='md:text-6xl text-4xl font-bold pb-8'>
+				<div className='md:text-5xl text-4xl font-bold pb-8'>
 					Promote E - Mobility
 				</div>
-				<div className='text-gray-200 md:text-2xl sm:text-1xl'>
+				<div className='text-gray-200 text-xl'>
 					We all know that the world is moving towards a greener eco friendly
 					electrical approach, even this team has taken a step to participate in
 					a electrical competition so that we gain knowledge in the development
