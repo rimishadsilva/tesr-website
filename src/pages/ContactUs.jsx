@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useRef } from "react";
 import "../components/contactUs/contactUs.css";
 
@@ -11,14 +12,23 @@ export default function ContactUs() {
     why: "",
   });
 
+  const uploadMe = (data) => {
+    console.log(data);
+    // console.log(credentials.current);
+    axios.post(`${process.env.REACT_APP_SHEET_API}`, data).then(()=>{
+      alert("Your application has been submitted successfully!"); // will add a loading modal later
+    })
+
+  };
+
   return (
     <>
       <h2 className="border-white border-solid border-b block text-6xl p-7 text-center text-white">
-        Let's drive the future, together
+        Future Enabled
       </h2>
 
       <div id="contact-us" className="contact-us-container">
-        <p className="p-0 text-white text-2xl p-4">Submit your application </p>
+        <p className="p-0 text-white text-3xl">Submit your application </p>
         <input
           className="contact-us-textbox"
           required
@@ -77,11 +87,11 @@ export default function ContactUs() {
 
         <input
           type="button"
-          value={"Click me!"}
+          value={"Submit!"}
           className="mx-auto inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xl cursor-pointer leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out"
-          onClick={() => {
-            console.log(credentials.current);
-          }}
+          onClick={
+            () => uploadMe(credentials.current)
+          }
         />
       </div>
     </>
