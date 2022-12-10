@@ -17,6 +17,8 @@ export default function ContactUs() {
     // console.log(credentials.current);
     axios.post(`${process.env.REACT_APP_SHEET_API}`, data).then(()=>{
       alert("Your application has been submitted successfully!"); // will add a loading modal later
+    }).catch((err)=>{
+      alert("Something went wrong. Please try again later");
     })
 
   };
