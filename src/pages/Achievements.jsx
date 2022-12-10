@@ -45,7 +45,7 @@ const Achievements = () => {
 					</p>
 					<a
 						href='/achievements'
-						class='bg-transparent mr-auto rounded shadow hover:shadow-lg py-2 px-4 border border-300'
+						class='hover:text-greenColor bg-transparent mr-auto rounded shadow hover:shadow-lg py-2 px-4 border border-300'
 					>
 						Explore Now
 					</a>
@@ -60,8 +60,8 @@ const Achievements = () => {
 									right: '50%',
 									width: '1px',
 									background: '#00D400',
-									border: '1px solid #00D400',
-									'border-radius': '1%',
+									border: '2px solid #00D400',
+									borderRadius: '1%',
 								}}
 							></div>
 
@@ -71,8 +71,8 @@ const Achievements = () => {
 									left: '50%',
 									width: '1px',
 									background: '#00D400',
-									border: '1px solid #00D400',
-									'border-radius': '1%',
+									border: '2px solid #00D400',
+									borderRadius: '1%',
 								}}
 							></div>
 							{achievements.map((achievement) => (
