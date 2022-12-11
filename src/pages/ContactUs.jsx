@@ -1,4 +1,5 @@
 import axios from "axios";
+import { toast, Toaster } from "react-hot-toast";
 import React, { useRef } from "react";
 import "../components/contactUs/contactUs.css";
 export default function ContactUs() {
@@ -15,15 +16,16 @@ export default function ContactUs() {
     console.log(data);
     // console.log(credentials.current);
     axios.post(`${process.env.REACT_APP_SHEET_API}`, data).then(()=>{
-      alert("Your application has been submitted successfully!"); // will add a loading modal later
+      toast.success("Your application has been submitted successfully!"); // will add a loading modal later
     }).catch((err)=>{
-      alert("Something went wrong. Please try again later");
+      toast.error("Something went wrong. Please try again later");
     })
 
   };
 
   return (
     <>
+      <div><Toaster/></div>
       <h2 className="border-white border-solid border-b block text-6xl p-7 text-center text-white">
         Future Enabled
       </h2>
