@@ -1,9 +1,9 @@
-import TeamMember from "./TeamMember";
+import TeamMember from './TeamMember';
 
 const TeamSection = ({ teamName, teamMembers }) => {
   return (
-      <section>
-      <h2>{teamName}</h2>
+    <section>
+      <h2 class="text-3xl">{teamName}</h2>
       <div className="captain">
         <TeamMember
           name={teamMembers.captain.name}
