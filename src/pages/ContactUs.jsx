@@ -1,7 +1,6 @@
 import axios from "axios";
 import React, { useRef } from "react";
 import "../components/contactUs/contactUs.css";
-
 export default function ContactUs() {
   const credentials = useRef({
     name: "",
@@ -90,7 +89,7 @@ export default function ContactUs() {
         <input
           type="button"
           value={"Submit!"}
-          className="mx-auto inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xl cursor-pointer leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out"
+          className="mx-auto inline-block px-6 py-2.5 bg-greenColor text-primaryText font-medium text-xl cursor-pointer leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out"
           onClick={
             () => uploadMe(credentials.current)
           }
