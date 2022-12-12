@@ -6,16 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 // Body of the application
 import { router } from './main';
-// Header and footer
-import Header from './components/Header';
-import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<Header />
 		<RouterProvider router={router} />
-		<Footer />
 	</React.StrictMode>,
 );
 
