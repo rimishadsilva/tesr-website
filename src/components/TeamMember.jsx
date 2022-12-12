@@ -1,4 +1,10 @@
-const TeamMember = ({ name, imagePath, designation }) => {
+const TeamMember = ({
+  name,
+  imagePath,
+  designation,
+  specialStyle,
+  specialStyle2,
+}) => {
   return (
     <>
       <img
@@ -6,8 +12,8 @@ const TeamMember = ({ name, imagePath, designation }) => {
         alt="Team Member"
         class="rounded-full resize-image"
       />
-      <p class="text-align-center">{name}</p>
-      <p>{designation}</p>
+      <p className={`text-align-center ${specialStyle2}`}>{name}</p>
+      <p className={`text-align-center ${specialStyle}`}>{designation}</p>
     </>
   );
 };
