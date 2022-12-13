@@ -10,7 +10,7 @@ const TeamMember = ({
       <img
         src={imagePath}
         alt="Team Member"
-        class="rounded-full resize-image"
+        className="rounded-full resize-image"
       />
       <p className={`text-align-center ${specialStyle2}`}>{name}</p>
       <p className={`text-align-center ${specialStyle}`}>{designation}</p>
@@ -20,6 +20,3 @@ const TeamMember = ({
 
 export default TeamMember;
 
-TeamMember.defaultProps = {
-  designation: '',
-};
