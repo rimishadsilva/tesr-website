@@ -19,4 +19,3 @@ const TeamMember = ({
 };
 
 export default TeamMember;
-
