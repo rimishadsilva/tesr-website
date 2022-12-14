@@ -16,3 +16,11 @@ body {
   background-color: #232523;
   color: #fff;
 }
+
+.resize-image{
+  display: block;
+  max-width:17rem;
+  max-height:8rem;
+  width: auto;
+  height: auto;
+}
