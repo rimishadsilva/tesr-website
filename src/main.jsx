@@ -9,6 +9,7 @@ import Achievements from './pages/Achievements';
 import Sponsors from './pages/Sponsors';
 import ContactUs from './pages/ContactUs';
 import Teams from './pages/Teams';
+import Gallery from './pages/Gallery';
 
 export const router = createBrowserRouter([
 	{
@@ -33,6 +34,10 @@ export const router = createBrowserRouter([
 			{
 				path: '/teams',
 				element: <Teams />,
+			},
+			{
+				path: '/gallery',
+				element: <Gallery />,
 			},
 		],
 	},
