@@ -8,7 +8,7 @@ import Home from './pages/Home';
 import Achievements from './pages/Achievements';
 import Sponsors from './pages/Sponsors';
 import ContactUs from './pages/ContactUs';
-import Gallery from './pages/Gallery';
+import { DisplayPhotos } from './pages/DisplayPhotos';
 
 export const router = createBrowserRouter([
 	{
@@ -32,12 +32,12 @@ export const router = createBrowserRouter([
 			},
 			{
 				path: '/gallery',
-				element: <Gallery />,
+				element: <DisplayPhotos />,
 			},
 		],
 	},
 	{
 		path: '/gallery',
-		element: <Gallery />
+		element: <DisplayPhotos />
 	}
 ]);
