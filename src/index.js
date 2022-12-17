@@ -1,22 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import { RouterProvider } from 'react-router-dom';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
 
 // Body of the application
-import { router } from './main';
+import { router } from "./main";
 // Header and footer
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-	<React.StrictMode>
-		<Header />
-		<RouterProvider router={router} />
-		<Footer />
-	</React.StrictMode>,
+  <React.StrictMode>
+    <Header />
+    <RouterProvider router={router} />
+    <Footer />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
