@@ -14,18 +14,21 @@ const TeamSection = ({ teamName, teamMembers }) => {
 
 			{
 				// for every team
-				Object.keys(teamMembers).map((domain) => {
+				Object.keys(teamMembers).map((domain, domain_id) => {
 					return (
 						domain !== 'captain' && (
-							<div className='grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3  mt-20'>
+							<div
+								className='grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 mt-20'
+								key={domain_id}
+							>
 								<div>
 									<h3 className='text-3xl font-light ml-6'>{domain}</h3>
 								</div>
 								<div className='grid grid-cols-4 min-[320px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 col-span-2  sm:col-span-2 md:col-span-2 min-[320px]:mt-10'>
-									{teamMembers[domain].map((member) => {
+									{teamMembers[domain].map((member, member_id) => {
 										// for each domain in team
 										return (
-											<div>
+											<div key={member_id}>
 												<TeamMember
 													name={member.name}
 													imagePath={member.imagePath}

@@ -1,29 +1,28 @@
-import { Link } from 'react-router-dom';
 import AchievementElement from '../components/AchievementElement';
 import { achievements } from '../data/AchievementData';
 
 const Achievements = () => {
 	return (
 		<section>
-			<div class='container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24'>
-				<div class='flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8'>
-					<p class='ml-2 text-greenColor uppercase tracking-loose'>
+			<div className='container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24'>
+				<div className='flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8'>
+					<p className='ml-2 text-greenColor uppercase tracking-loose'>
 						Achievements
 					</p>
-					<p class='text-3xl md:text-4xl mb-4'>
+					<p className='text-3xl md:text-4xl mb-4'>
 						Achievements of Team eSJEC Racing
 					</p>
-					<p class='text-sm md:text-base mb-8'>
+					<p className='text-sm md:text-base mb-8'>
 						We have been a part of many competitions and have won many awards.
 						Here are some of our achievements.
 					</p>
 				</div>
 
-				<div class='ml-0 md:ml-12 lg:w-2/3 sticky'>
-					<div class='container mx-auto w-full h-full'>
-						<div class='relative wrap overflow-hidden p-10 h-full'>
+				<div className='ml-0 md:ml-12 lg:w-2/3 sticky'>
+					<div className='container mx-auto w-full h-full'>
+						<div className='relative wrap overflow-hidden p-10 h-full'>
 							<div
-								class='border-2-2 absolute h-full border'
+								className='border-2-2 absolute h-full border'
 								style={{
 									right: '50%',
 									width: '1px',
@@ -34,7 +33,7 @@ const Achievements = () => {
 							></div>
 
 							<div
-								class='border-2-2 absolute h-full border'
+								className='border-2-2 absolute h-full border'
 								style={{
 									left: '50%',
 									width: '1px',
@@ -43,8 +42,8 @@ const Achievements = () => {
 									borderRadius: '1%',
 								}}
 							></div>
-							{achievements.map((achievement) => (
-								<AchievementElement {...achievement} />
+							{achievements.map((achievement, achievement_id) => (
+								<AchievementElement {...achievement} key={achievement_id} />
 							))}
 						</div>
 					</div>
