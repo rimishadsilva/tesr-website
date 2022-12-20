@@ -13,12 +13,10 @@ const Achievements = () => {
 					<p class='text-3xl md:text-4xl mb-4'>
 						Achievements of Team eSJEC Racing
 					</p>
-					<Link
-						to='/achievements'
-						class='hover:text-greenColor bg-transparent mr-auto rounded shadow hover:shadow-lg py-2 px-4 border border-300'
-					>
-						Explore Now
-					</Link>
+					<p class='text-sm md:text-base mb-8'>
+						We have been a part of many competitions and have won many awards.
+						Here are some of our achievements.
+					</p>
 				</div>
 
 				<div class='ml-0 md:ml-12 lg:w-2/3 sticky'>
