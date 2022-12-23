@@ -1,3 +1,5 @@
+import BrochureImage from '../../images/brochure.png';
+
 const Section2 = () => {
 	return (
 		<div className='pb-10'>
@@ -9,7 +11,11 @@ const Section2 = () => {
 					target='_blank'
 					rel='noreferrer'
 				>
-					View Online
+					<img
+						src={BrochureImage}
+						alt='View Online'
+						className='inline px-4 w-16'
+					/>{' '}
 				</a>
 			</div>
 		</div>

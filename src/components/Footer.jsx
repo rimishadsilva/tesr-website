@@ -23,10 +23,10 @@ const Footer = () => {
 							</a>
 							<div className='flex gap-4 pt-4'>
 								<a
-									href='tel:+91702255971'
+									href='tel:+919880039197'
 									className='text-gray-200 hover:text-greenColor'
 								>
-									+91-702255971
+									+91-9880039197
 								</a>
 							</div>
 						</div>
@@ -71,13 +71,13 @@ const Footer = () => {
 				</div>
 
 				<div className='flex items-center justify-center md:text-2xl'>
-					Made with{' '}
+					{/* Made with{' '}
 					<img
 						src={FooterHeartImage}
 						alt='Footer Heart'
 						className='inline px-4 w-16'
 					/>{' '}
-					by{' '}
+					by{' '} */}
 					<a
 						href='https://gdscsjec.in'
 						target='_blank'

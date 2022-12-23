@@ -1,4 +1,5 @@
 import Section1Image from '../../images/beetle.svg';
+import BeetleBg from '../../images/Ellipse.svg';
 
 const Section1 = () => {
 	return (
@@ -15,6 +16,7 @@ const Section1 = () => {
 				</div>
 
 				<div>
+					{/* <img src={BeetleBg} alt='' className='' /> */}
 					<img src={Section1Image} alt='beetle' className='' />
 				</div>
 			</div>

@@ -8,7 +8,7 @@ const Section3 = () => {
 				<div className='md:text-5xl text-4xl pb-8'>
 					Electric All Terrain Vehicle
 				</div>
-				<div className='text-gray-200 text-xl'>
+				<div className='text-gray-200 text-lg'>
 					Mother nature being the perfect engineer of all biological life forms
 					, the vehicle has been built deriving immense inspiration from the
 					qualities of a reptile. Like the Turtle, Our Car is built in such a

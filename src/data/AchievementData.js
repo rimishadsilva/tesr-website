@@ -59,6 +59,6 @@ export const achievements = [
 			'Endurance AIR 5',
 			'Overall Performance AIR 5',
 		],
-		sides: 'left',
+		sides: 'right',
 	},
 ];
