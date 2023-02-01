@@ -9,7 +9,8 @@ const Section3 = () => {
 					Electric All Terrain Vehicle
 				</div>
 				<div className='text-gray-200 text-base'>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis esse aspernatur vitae aliquam maiores? Exercitationem, accusantium! Et, quam laboriosam. Quidem, mollitia inventore iste similique quia quod nostrum commodi excepturi labore!
+				BAJA SAE INDIA is a student level competition that has its roots outside India. The goal of each team is to design and build a prototype of a rugged single seat, off-road four-wheel vehicle that has to go through multiple tests and then compete in the endurance race.
+				We as a part of SAE INDIA build an Electric All Terrain Vehicle.
 				</div>
 			</div>
 		</div>
