@@ -6,8 +6,8 @@ const Section3 = () => {
 			<div className='text-4xl text-greenColor pb-4'>
 				COME BE A PART OF OUR JOURNEY!
 			</div>
-			<img src={SponsorsImage} alt='tesr' className='' />
-		</div>
+			{/* <img src={SponsorsImage} alt='tesr' className='' /> */}
+			<iframe width="840" height="472" src="https://www.youtube.com/embed/hzXPoCMhDRw?start=33" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		</div>
 	);
 };
 

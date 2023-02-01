@@ -5,7 +5,7 @@ const Section4 = () => {
 		<div className='flex flex-col md:flex-row justify-between items-center py-10 gap-20 mb-20'>
 			<div className='md:w-3/5 sm:w-1/2'>
 				<div className='md:text-5xl text-4xl pb-8'>Promote E - Mobility</div>
-				<div className='text-gray-200 text-xl'>
+				<div className='text-gray-200 text-base'>
 					We all know that the world is moving towards a greener eco friendly
 					electrical approach, even this team has taken a step to participate in
 					a electrical competition so that we gain knowledge in the development

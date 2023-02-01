@@ -1,14 +1,6 @@
-import Achievement1Image from '../images/achievements-1.jpg';
 import Achievement2Image from '../images/achievements-2.jpg';
 
 export const achievements = [
-	{
-		date: 2022,
-		title: 'SAE Baja Prelims',
-		image: Achievement1Image,
-		description: ['Business plan AIR 1', 'Design report AIR 1'],
-		sides: 'left',
-	},
 	{
 		date: 2021,
 		title: 'SAE BAJA - Indore',

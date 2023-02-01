@@ -8,13 +8,8 @@ const Section3 = () => {
 				<div className='md:text-5xl text-4xl pb-8'>
 					Electric All Terrain Vehicle
 				</div>
-				<div className='text-gray-200 text-lg'>
-					Mother nature being the perfect engineer of all biological life forms
-					, the vehicle has been built deriving immense inspiration from the
-					qualities of a reptile. Like the Turtle, Our Car is built in such a
-					way that it can adapt to any terrain. Both the reptile and our car
-					have an exoskeleton which is hard and Endures almost anything. Both
-					are Fast and Tough.
+				<div className='text-gray-200 text-base'>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis esse aspernatur vitae aliquam maiores? Exercitationem, accusantium! Et, quam laboriosam. Quidem, mollitia inventore iste similique quia quod nostrum commodi excepturi labore!
 				</div>
 			</div>
 		</div>
