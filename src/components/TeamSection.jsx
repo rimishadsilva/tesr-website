@@ -25,11 +25,11 @@ const TeamSection = ({ teamName, teamMembers }) => {
                     {domain}
                   </h3>
                 </div>
-                <div className="grid grid-cols-4 min-[320px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 col-span-2  sm:col-span-2 md:col-span-2">
+                <div className="grid grid-cols-4 min-[320px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 col-span-2  sm:col-span-2 md:col-span-2 max-md:mt-20">
                   {teamMembers[domain].map((member) => {
                     // for each domain in team
                     return (
-                      <div>
+                      <div className="max-md:mt-5">
                         <TeamMember
                           name={member.name}
                           imagePath={member.imagePath}
