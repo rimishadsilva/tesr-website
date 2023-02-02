@@ -1,35 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import LogoImage from '../images/logo.svg';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
-	const location = useLocation();
 	const [navbar, setNavbar] = useState(false);
-	const [isHomePage, setIsHomePage] = useState(false);
-
-	// useEffect(() => {
-	// 	const path = location.pathname;
-	// 	if (path === '/') {
-	// 		setIsHomePage(true);
-	// 	} else {
-	// 		setIsHomePage(false);
-	// 	}
-	// }, [location.pathname]);
 
 	return (
 		<nav className='w-full bg-white shadow'>
 			<div className='justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-9'>
 				<div>
-					<div className='flex items-center justify-between py-3 md:py-5 md:block'>
-						{!isHomePage && (
-							<Link to='/'>
-								<img
-									src={LogoImage}
-									alt='beetle'
-									className='w-4/12 md:w-4/12'
-								/>
-							</Link>
-						)}
+					<div className='flex items-center justify-between py-3 pr-3 md:py-5 md:block'>
+						<Link to='/'>
+							<img src={LogoImage} alt='beetle' className='w-4/12 md:w-4/12' />
+						</Link>
 
 						<div className='md:hidden'>
 							<button

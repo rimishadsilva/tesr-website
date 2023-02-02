@@ -15,41 +15,66 @@ body {
   /* Default styles */
   background-color: #232523;
   color: #fff;
+  overflow-x: hidden;
 }
 
-.resize-image{
+.resize-image {
   display: block;
-  max-width:17rem;
-  max-height:8rem;
+  max-width: 17rem;
+  max-height: 8rem;
   width: auto;
   height: auto;
 }
+
 #beetle {
   width: 50vw;
   position: absolute;
-  top: 15vh;
+  top: 10vh;
 
   z-index: -99;
   animation: beetle 1s ease 2s forwards;
 }
+
+.foldable-hero {
+  padding-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  #beetle {
+    animation: beetle 1s ease 2s forwards;
+    z-index: -98;
+    width: 100vw;
+  }
+
+  #glow {
+    z-index: -99;
+  }
+
+  .foldable-hero {
+    padding-left: 0px;
+  }
+}
+
 @-webkit-keyframes beetle {
   0% {
     left: 90vh;
   }
 
   100% {
-    left: 50vh;
+    left: 0vh;
   }
 }
+
 @keyframes beetle {
   0% {
     left: 150vh;
   }
 
   100% {
-    left: 75vh;
+    left: 0vh;
   }
 }
+
 #box {
   width: 25vw;
   height: 40vh;
@@ -57,28 +82,32 @@ body {
   top: 25vh;
   z-index: 100;
   background-color: #232523;
-  -webkit-animation: box-animation 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    1s both;
+  -webkit-animation: box-animation 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
   animation: box-animation 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
 }
+
 @-webkit-keyframes box-animation {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     display: none;
   }
 }
+
 @keyframes box-animation {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     display: none;
   }
 }
+
 #screen {
   background-color: #232523;
   z-index: 20;
@@ -86,28 +115,32 @@ body {
   width: 100vw;
   pointer-events: none;
   position: absolute;
-  -webkit-animation: screen-animation 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    2s both;
+  -webkit-animation: screen-animation 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
   animation: screen-animation 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
 }
+
 @-webkit-keyframes screen-animation {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     display: none;
   }
 }
+
 @keyframes screen-animation {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     display: none;
   }
 }
+
 #logo {
   width: 40vw;
   position: absolute;
@@ -115,8 +148,7 @@ body {
   left: 10vw;
   z-index: 50;
 
-  -webkit-animation: logo-animation 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    forwards;
+  -webkit-animation: logo-animation 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   animation: logo-animation 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
 
@@ -125,15 +157,18 @@ body {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
   50% {
     -webkit-transform: translateX(27vw);
     transform: translateX(27vw);
   }
+
   70% {
     -webkit-transform: translateX(27vw);
     transform: translateX(27vw);
     width: 40vw;
   }
+
   99% {
     -webkit-transform: translateX(25vw);
     transform: translateX(25vw);
@@ -141,6 +176,7 @@ body {
     -webkit-transform: translateY(-27vh);
     transform: translateY(-27vh);
   }
+
   100% {
     -webkit-transform: translateX(25vw);
     transform: translateX(25vw);
@@ -156,28 +192,35 @@ body {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
+
   50% {
     -webkit-transform: translateX(27vw);
     transform: translateX(27vw);
+    opacity: 0.8;
   }
+
   70% {
     -webkit-transform: translateX(27vw);
     transform: translateX(27vw);
     width: 40vw;
+    opacity: 0.5;
   }
+
   99% {
     -webkit-transform: translateX(25vw);
     transform: translateX(25vw);
     width: 10vw;
     -webkit-transform: translateY(-27vh);
     transform: translateY(-27vh);
+    opacity: 0;
   }
+
   100% {
     -webkit-transform: translateX(25vw);
     transform: translateX(25vw);
     width: 10vw;
     -webkit-transform: translateY(-27vh);
     transform: translateY(-27vh);
-    visibility: hidden;
+    opacity: 0;
   }
 }
