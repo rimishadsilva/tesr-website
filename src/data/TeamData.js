@@ -521,10 +521,10 @@ let Beetle3 = {
 };
 
 let Beetle4 = {
-  Captain: {
-    name: '',
-    imagePath: '',
-    designation: '',
+  captain: {
+    name: 'Clifford Noronha',
+    imagePath: './images/team/beetle2.0/scvf.png',
+    designation: 'CAPTAIN, HOD Suspension',
   },
   Rollcage: [
     {

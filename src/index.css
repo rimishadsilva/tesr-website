@@ -34,7 +34,7 @@ body {
 }
 @-webkit-keyframes beetle {
   0% {
-    left: 150vh;
+    left: 90vh;
   }
 
   100% {
@@ -112,7 +112,7 @@ body {
   width: 40vw;
   position: absolute;
   top: 30vh;
-  left: 0vw;
+  left: 10vw;
   z-index: 50;
 
   -webkit-animation: logo-animation 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -134,8 +134,7 @@ body {
     transform: translateX(27vw);
     width: 40vw;
   }
-
-  90% {
+  99% {
     -webkit-transform: translateX(25vw);
     transform: translateX(25vw);
     width: 10vw;
@@ -148,6 +147,7 @@ body {
     width: 10vw;
     -webkit-transform: translateY(-27vh);
     transform: translateY(-27vh);
+    visibility: hidden;
   }
 }
 
@@ -165,8 +165,7 @@ body {
     transform: translateX(27vw);
     width: 40vw;
   }
-
-  90% {
+  99% {
     -webkit-transform: translateX(25vw);
     transform: translateX(25vw);
     width: 10vw;
@@ -179,5 +178,6 @@ body {
     width: 10vw;
     -webkit-transform: translateY(-27vh);
     transform: translateY(-27vh);
+    visibility: hidden;
   }
 }

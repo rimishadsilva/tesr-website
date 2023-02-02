@@ -7,14 +7,14 @@ export default function Header() {
 	const [navbar, setNavbar] = useState(false);
 	const [isHomePage, setIsHomePage] = useState(false);
 
-	useEffect(() => {
-		const path = location.pathname;
-		if (path === '/') {
-			setIsHomePage(true);
-		} else {
-			setIsHomePage(false);
-		}
-	}, [location.pathname]);
+	// useEffect(() => {
+	// 	const path = location.pathname;
+	// 	if (path === '/') {
+	// 		setIsHomePage(true);
+	// 	} else {
+	// 		setIsHomePage(false);
+	// 	}
+	// }, [location.pathname]);
 
 	return (
 		<nav className='w-full bg-white shadow'>

@@ -16,7 +16,7 @@ const Section1 = () => {
 				</div>
 
 				<div>
-					<img src={BeetleBg} alt='' className='' />
+					<img src={BeetleBg} alt='bg' className='' />
 					<img src={Section1Image} alt='beetle' className='' id='beetle' />
 				</div>
 			</div>
