@@ -3,7 +3,7 @@ import TeamMember from './TeamMember';
 const TeamSection = ({ teamName, teamMembers }) => {
 	return (
 		<section className='py-10'>
-			<h2 className='text-5xl font-normal ml-6 mt-8'>{teamName}</h2>
+			<h2 className='text-5xl font-normal ml-6 mt-8'  style={{ fontFamily: 'Audiowide'}}>{teamName}</h2>
 			<div className=' flex flex-col items-center justify-center'>
 				<TeamMember
 					name={teamMembers['captain'].name}
@@ -21,7 +21,7 @@ const TeamSection = ({ teamName, teamMembers }) => {
 								className='grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 mt-20'
 								key={domain_id}
 							>
-								<div>
+								<div  style={{ fontFamily: 'Audiowide'}}>
 									<h3 className='text-3xl font-light ml-6'>{domain}</h3>
 								</div>
 								<div className='grid grid-cols-4 min-[320px]:grid-cols-2 sm:grid-cols-2 md:grid-cols-4 col-span-2  sm:col-span-2 md:col-span-2 min-[320px]:mt-10'>

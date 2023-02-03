@@ -6,14 +6,14 @@ const Footer = () => {
 			<div className='container mx-auto px-10'>
 				<div className='flex flex-col lg:flex-row justify-between gap-10 pb-20'>
 					<div className='sm:w-3/6'>
-						<div className='md:text-4xl text-3xl pb-4'>Address</div>
+						<div className='md:text-4xl text-3xl pb-4'  style={{ fontFamily: 'Audiowide'}}>Address</div>
 						<div className='text-gray-200 text-xl'>
 							St Joseph Engineering College, Vamanjoor, Mangalore, Karnataka,
 							India - 575028
 						</div>
 					</div>
 					<div className='sm:w-2/6'>
-						<div className='md:text-4xl text-3xl pb-4'>Contact</div>
+						<div className='md:text-4xl text-3xl pb-4'  style={{ fontFamily: 'Audiowide'}}>Contact</div>
 						<div className='text-gray-200 text-xl'>
 							<a
 								href='mailto:teamesjecracing@gmail.com'
@@ -32,7 +32,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<div className='sm:w-1/3'>
-						<div className='md:text-4xl text-3xl pb-4'>Follow Us</div>
+						<div className='md:text-4xl text-3xl pb-4'  style={{ fontFamily: 'Audiowide'}}>Follow Us</div>
 						<div className='text-gray-200 text-xl flex flex-col'>
 							<a
 								href='https://twitter.com/TEAMeSJECRACING?s=08'
@@ -70,7 +70,7 @@ const Footer = () => {
 					</div>
 				</div>
 
-				<div className='flex items-center justify-center md:text-2xl'>
+				<div className='flex items-center justify-center md:text-2xl'  style={{ fontFamily: 'Audiowide'}}> 
 					{/* Made with{' '}
 					<img
 						src={FooterHeartImage}

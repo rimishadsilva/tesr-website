@@ -4,7 +4,7 @@ const Section2 = () => {
 	return (
 		<div className='container mx-auto px-10 flex flex-col md:flex-row justify-between items-center py-10 gap-20 mb-20'>
 			<div className='md:w-3/4 sm:w-1/2'>
-				<div className='md:text-5xl text-4xl pb-8'>About Us</div>
+				<div className='md:text-5xl text-4xl pb-8'  style={{ fontFamily: 'Audiowide'}}>About Us</div>
 				<div className='text-gray-200 text-lg'>
 					We are Team eSJEC Racing from St. Joseph Engineering College. Team
 					eSJEC Racing was formed in March, 2019 under the SAEINDIA SJEC

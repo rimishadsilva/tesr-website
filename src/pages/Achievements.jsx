@@ -6,10 +6,10 @@ const Achievements = () => {
 		<section>
 			<div className='container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24'>
 				<div className='flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8'>
-					<p className='ml-2 text-greenColor uppercase tracking-loose'>
+					<p className='ml-2 text-greenColor uppercase tracking-loose'  style={{ fontFamily: 'Audiowide'}}>
 						Achievements
 					</p>
-					<p className='text-3xl md:text-4xl mb-4'>
+					<p className='text-3xl md:text-4xl mb-4'  style={{ fontFamily: 'Audiowide'}}>
 						Achievements of Team eSJEC Racing
 					</p>
 					<p className='text-sm md:text-base mb-8'>

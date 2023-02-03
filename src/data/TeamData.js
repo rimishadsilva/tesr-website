@@ -526,18 +526,18 @@ let Beetle4 = {
     imagePath: './images/team/beetle2.0/scvf.png',
     designation: 'CAPTAIN, HOD Suspension',
   },
-  Rollcage: [
-    {
-      name: '',
-      imagePath: '',
-      designation: '',
-      specialStyle: '',
-    },
-  ],
-  Steering: [],
-  Suspension: [],
-  Braking: [],
-  Powertrain: [],
+  // Rollcage: [
+  //   {
+  //     name: '',
+  //     imagePath: '',
+  //     designation: '',
+  //     specialStyle: '',
+  //   },
+  // ],
+  // Steering: [],
+  // Suspension: [],
+  // Braking: [],
+  // Powertrain: [],
 };
 
 export { Beetle1, Beetle2, Beetle3, Beetle4 };

@@ -10,7 +10,7 @@ const AchievementElement = ({ date, title, image, description, sides }) => {
 		<div className={side}>
 			<div className='order-1 w-5/12'></div>
 			<div className={side2}>
-				<p className='mb-3 text-base text-yellow-300'>{date}</p>
+				<p className='mb-3 text-base text-yellow-300'  style={{ fontFamily: 'Audiowide'}}>{date}</p>
 				<h4 className='mb-3 font-bold text-lg md:text-3xl'>{title}</h4>
 				<img src={image} alt={title} />
 				<ul className='leading-snug text-opacity-100 text-xl pt-4 md:list-disc md:list-inside'>

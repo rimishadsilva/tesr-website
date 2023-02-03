@@ -56,7 +56,7 @@ export default function Header() {
 					<div
 						className={`flex-1 justify-self-center  pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
 							navbar ? 'block' : 'hidden'
-						}`}
+						}`}  style={{ fontFamily: 'Audiowide'}}
 					>
 						<ul className='items-center justify-center mx-14 text-xl space-y-8 md:flex md:space-x-7 md:space-y-0 '>
 							<li className='text-gray-600 hover:text-blue-600 hover:text-greenColor'>

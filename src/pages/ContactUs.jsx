@@ -12,8 +12,8 @@ export default function ContactUs() {
 		why: '',
 	});
 
-	const uploadMe = (data) => {
-		axios
+	const uploadMe = async(data) => {
+		await axios
 			.post(`${process.env.REACT_APP_SHEET_API}`, data)
 			.then(() => {
 				toast.success('Your application has been submitted successfully!'); // will add a loading modal later
@@ -28,12 +28,12 @@ export default function ContactUs() {
 			<div>
 				<Toaster />
 			</div>
-			<h2 className='block text-6xl p-7 text-center text-white py-10'>
+			<h2 className='block text-6xl p-7 text-center text-white py-10'  style={{ fontFamily: 'Audiowide'}}>
 				Get in touch with us
 			</h2>
 
 			<div id='contact-us' className='contact-us-container'>
-				<p className='p-0 text-white text-3xl'>Submit your application </p>
+				<p className='p-0 text-white text-3xl'  style={{ fontFamily: 'Audiowide'}}>Submit your application </p>
 				<input
 					className='contact-us-textbox'
 					required
@@ -93,7 +93,9 @@ export default function ContactUs() {
 				<input
 					type='button'
 					value={'Submit!'}
+					id='submitbtn'
 					className='mx-auto inline-block px-6 py-2.5 bg-greenColor text-primaryText font-medium text-xl cursor-pointer leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out'
+					style={{ fontFamily: 'Audiowide'}}
 					onClick={() => uploadMe(credentials.current)}
 				/>
 			</div>

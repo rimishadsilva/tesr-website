@@ -3,7 +3,7 @@ import BrochureImage from '../../images/inverted_brochure.png';
 const Section2 = () => {
 	return (
 		<div className='pb-10 flex flex-col items-center'>
-			<div className='text-4xl text-greenColor pb-4'>Our Brochure</div>
+			<div className='text-4xl text-greenColor pb-4'  style={{ fontFamily: 'Audiowide'}}>Our Brochure</div>
 			<div className='text-lg'>
 				<a
 					href='https://drive.google.com/file/d/1xPP_Yfj90VJWwGikbjEa6OB46NbesAfv/view?usp=sharing'

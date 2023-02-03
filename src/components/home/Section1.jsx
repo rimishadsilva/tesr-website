@@ -6,7 +6,7 @@ const Section1 = () => {
 		<div>
 			<div
 				className='flex flex-col md:flex-row justify-between items-center py-10 gap-4'
-				style={{ height: window.innerWidth > 720 && 'calc(100vh - 120px)' }}
+				style={{ height: window.innerWidth > 720 && 'calc(100vh - 120px)', fontFamily: 'Audiowide' }} 
 			>
 				<div className='md:w-3/6  md:text-7xl text-4xl font-bold foldable-hero'>
 					MEET THE MEAN
