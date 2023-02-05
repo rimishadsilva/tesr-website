@@ -12,11 +12,15 @@ export default function ContactUs() {
 		why: '',
 	});
 
+	const [loading, setLoading] = React.useState(false);
+
 	const uploadMe = async(data) => {
+		setLoading(true);
 		await axios
 			.post(`${process.env.REACT_APP_SHEET_API}`, data)
 			.then(() => {
-				toast.success('Your application has been submitted successfully!'); // will add a loading modal later
+				toast.success('Your application has been submitted successfully!'); 
+				setLoading(false);
 			})
 			.catch((err) => {
 				toast.error('Something went wrong. Please try again later');
@@ -90,14 +94,23 @@ export default function ContactUs() {
 					}}
 				/>
 
+				{loading ? (
+				<input
+					type='button'
+					value={'loading...'}
+					id='submitbtn'
+					className='mx-auto inline-block px-6 py-2.5 bg-primarybackground text-primaryText font-medium text-xl b cursor-pointer leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out'
+					style={{ fontFamily: 'Audiowide'}}
+					onClick={() => uploadMe(credentials.current)}
+				/>) :
 				<input
 					type='button'
 					value={'Submit!'}
 					id='submitbtn'
-					className='mx-auto inline-block px-6 py-2.5 bg-greenColor text-primaryText font-medium text-xl cursor-pointer leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out'
+					className='mx-auto inline-block px-6 py-2.5 bg-greenColor text-primaryText font-medium text-xl b cursor-pointer leading-tight uppercase rounded-full shadow-md hover:bg-green-600 hover:shadow-lg focus:bg-green-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-700 active:shadow-lg transition duration-150 ease-in-out'
 					style={{ fontFamily: 'Audiowide'}}
 					onClick={() => uploadMe(credentials.current)}
-				/>
+				/>}
 			</div>
 		</>
 	);
